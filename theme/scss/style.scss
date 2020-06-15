@@ -2,6 +2,10 @@
 
 // Import a Google Font
 @import url('https://fonts.googleapis.com/css?family=Lato');
+@import "../../fontawesome/fontawesome.scss";
+@import "../../fontawesome/regular.scss";
+@import "../../fontawesome/solid.scss";
+@import "../../fontawesome/brands.scss";
 
 /* SCSS HSL */
 $honolulu-blue: rgba(41, 111, 173, 1);
@@ -21,9 +25,19 @@ $link: $orange-web;
 $success: $emerald;
 $warning: $terra-cotta;
 $family-sans-serif: "Lato", sans-serif;
+$button-text-hover-color: $link;
+
+
+.navbar-dropdown{
+	navbar-item:hover{
+		color: $button-text-hover-color;
+	}
+}
+
 
 // must be imported after the modif
 @import "../../node_modules/bulma/bulma.sass";
+@import '../../node_modules/bulma-timeline/dist/css/bulma-timeline.sass';
 
 
 /* Still being the same as in Bulma
@@ -31,15 +45,6 @@ $danger: $red
 $dark: $grey-darker
 $text: $grey-dark
 */
-
-// .navbar-item {
-// 	h4 {
-// 		font-family: 'Chewy';
-// 		color: #888;
-// 		margin-left: 0.5em;
-// 		text-decoration: none !important;
-// 	}
-// }
 
 
 h2 {
